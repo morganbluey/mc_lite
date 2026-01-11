@@ -1,0 +1,554 @@
+[
+    {
+        "id": 1,
+        "clue": "Lead actor finally gets past misaligned teeth",
+        "answer": "tether",
+        "solved": false
+    },
+    {
+        "id": 2,
+        "clue": "Top Easter egg of dozen, I think",
+        "answer": "zenith",
+        "solved": false
+    },
+    {
+        "id": 3,
+        "clue": "Architect plastered pole's spot",
+        "answer": "the arctic",
+        "solved": false
+    },
+    {
+        "id": 4,
+        "clue": "Humans maybe evolved armpits to conserve energy",
+        "answer": "primates",
+        "solved": false
+    },
+    {
+        "id": 5,
+        "clue": "Bully swung walking stick during fourth quarter of ballgame",
+        "answer": "menace",
+        "solved": false
+    },
+    {
+        "id": 6,
+        "clue": "Please... shaken not stirred",
+        "answer": "asleep",
+        "solved": false
+    },
+    {
+        "id": 7,
+        "clue": "Business disinfected casino to conceal triple murder, perhaps?",
+        "answer": "sin",
+        "solved": false
+    },
+    {
+        "id": 8,
+        "clue": "Pair fouled by ref for enlarging balls",
+        "answer": "air pump",
+        "solved": false
+    },
+    {
+        "id": 9,
+        "clue": "Think back about origin of Greek horse made of wood sometimes",
+        "answer": "knight",
+        "solved": false
+    },
+    {
+        "id": 10,
+        "clue": "Flat, crustless, half-size loaf",
+        "answer": "laze",
+        "solved": false
+    },
+    {
+        "id": 11,
+        "clue": "Nineties freestyle icon known for his energetic MC work?",
+        "answer": "einstein",
+        "solved": false
+    },
+    {
+        "id": 12,
+        "clue": "Get hanky out, choking on words of appreciation",
+        "answer": "thank you",
+        "solved": false
+    },
+    {
+        "id": 13,
+        "clue": "Edison half screwed a lightbulb?",
+        "answer": "idea",
+        "solved": false
+    },
+    {
+        "id": 14,
+        "clue": "Drinker's release from prison initiated after back massage",
+        "answer": "burp",
+        "solved": false
+    },
+    {
+        "id": 15,
+        "clue": "Cold guys heartlessly shun quirky women",
+        "answer": "snowmen",
+        "solved": false
+    },
+    {
+        "id": 16,
+        "clue": "Bound escapee heard admitting crime essentially",
+        "answer": "skip",
+        "solved": false
+    },
+    {
+        "id": 17,
+        "clue": "Today's Wordle partly brought about yawning",
+        "answer": "drowsy",
+        "solved": false
+    },
+    {
+        "id": 18,
+        "clue": "I love doing gymnastics with this extremely springy bunch?",
+        "answer": "violets",
+        "solved": false
+    },
+    {
+        "id": 19,
+        "clue": "Idol tied back ponytail",
+        "answer": "deity",
+        "solved": false
+    },
+    {
+        "id": 20,
+        "clue": "Goats go off behind baker's trailer for crumbs!",
+        "answer": "rats",
+        "solved": false
+    },
+    {
+        "id": 21,
+        "clue": "Kart redesigned to limit carbon footprint",
+        "answer": "track",
+        "solved": false
+    },
+    {
+        "id": 22,
+        "clue": "Secretly ditch essay for game with mates?",
+        "answer": "chess",
+        "solved": false
+    },
+    {
+        "id": 23,
+        "clue": "Christmas song becoming useful for revolving music player?",
+        "answer": "carousel",
+        "solved": false
+    },
+    {
+        "id": 24,
+        "clue": "Admit spending time with really odd seaman",
+        "answer": "admiral",
+        "solved": false
+    },
+    {
+        "id": 25,
+        "clue": "Solitary Dancing Queen fan",
+        "answer": "royalist",
+        "solved": false
+    },
+    {
+        "id": 26,
+        "clue": "I, for one, say, \"kind of figures!\"",
+        "answer": "roman numerals",
+        "solved": false
+    },
+    {
+        "id": 27,
+        "clue": "Beings regularly kept behind Area 51!?",
+        "answer": "aliens",
+        "solved": false
+    },
+    {
+        "id": 28,
+        "clue": "No coming back after shipwreck? That sucks",
+        "answer": "siphon",
+        "solved": false
+    },
+    {
+        "id": 29,
+        "clue": "Underwater craft acoustically monitored dock",
+        "answer": "crow",
+        "solved": false
+    },
+    {
+        "id": 30,
+        "clue": "Fishnets that could assist fishing vessel's process by seconds",
+        "answer": "subtract",
+        "solved": false
+    },
+    {
+        "id": 31,
+        "clue": "Engineer rang unknown number when blowing a fuse",
+        "answer": "hosiery",
+        "solved": false
+    },
+    {
+        "id": 32,
+        "clue": "Play leapfrog across street drains - a fitting game?",
+        "answer": "angry",
+        "solved": false
+    },
+    {
+        "id": 33,
+        "clue": "Untidy storage sheds or entryways",
+        "answer": "tetris",
+        "solved": false
+    },
+    {
+        "id": 34,
+        "clue": "Somewhat ridiculous? On the contrary, it's clear",
+        "answer": "gates",
+        "solved": false
+    },
+    {
+        "id": 35,
+        "clue": "One goes into debt flying private jet?",
+        "answer": "lucid",
+        "solved": false
+    },
+    {
+        "id": 36,
+        "clue": "Paddleboat's left side or its terminus!?",
+        "answer": "bidet",
+        "solved": false
+    },
+    {
+        "id": 37,
+        "clue": "Celebration of big anniversary since humble beginnings",
+        "answer": "port",
+        "solved": false
+    },
+    {
+        "id": 38,
+        "clue": "One wiped out from parenting, struggling with child",
+        "answer": "bash",
+        "solved": false
+    },
+    {
+        "id": 39,
+        "clue": "A Spanish greeting returning a Hawaiian one!",
+        "answer": "pregnant",
+        "solved": false
+    },
+    {
+        "id": 40,
+        "clue": "Dove gulped, accidentally eating scorpion's tail",
+        "answer": "aloha",
+        "solved": false
+    },
+    {
+        "id": 41,
+        "clue": "Doll dropped by weekend nursery intruder?",
+        "answer": "plunged",
+        "solved": false
+    },
+    {
+        "id": 42,
+        "clue": "A bit of marijuana use alleviates sickness",
+        "answer": "weed",
+        "solved": false
+    },
+    {
+        "id": 43,
+        "clue": "Extremely feeble, suffering shiver!?",
+        "answer": "nausea",
+        "solved": false
+    },
+    {
+        "id": 44,
+        "clue": "Perhaps Sydney Sweeney finally follows script now and then",
+        "answer": "feverish",
+        "solved": false
+    },
+    {
+        "id": 45,
+        "clue": "Face-masked men cough no more!",
+        "answer": "city",
+        "solved": false
+    },
+    {
+        "id": 46,
+        "clue": "Undercover reporter changed surname to protect privacy, initially?",
+        "answer": "enough",
+        "solved": false
+    },
+    {
+        "id": 47,
+        "clue": "PR pro .rD?",
+        "answer": "sundial",
+        "solved": false
+    },
+    {
+        "id": 48,
+        "clue": "Dressing naked pair for clip",
+        "answer": "soothe",
+        "solved": false
+    },
+    {
+        "id": 49,
+        "clue": "Ballpark teams' tie-breaker",
+        "answer": "linear",
+        "solved": false
+    },
+    {
+        "id": 50,
+        "clue": "Slender shiny sharpened steel strikers!?",
+        "answer": "musical",
+        "solved": false
+    },
+    {
+        "id": 51,
+        "clue": "Little bit of whisky? Not at two in the morning!",
+        "answer": "ounce",
+        "solved": false
+    },
+    {
+        "id": 52,
+        "clue": "Blue feathers discarded?",
+        "answer": "gills",
+        "solved": false
+    },
+    {
+        "id": 53,
+        "clue": "20/20 vision eye patch",
+        "answer": "comedian",
+        "solved": false
+    },
+    {
+        "id": 54,
+        "clue": "Sham hearing: litigate partner for a buck",
+        "answer": "mobile",
+        "solved": false
+    },
+    {
+        "id": 55,
+        "clue": "Leaves Inca ruins in Western Hemisphere",
+        "answer": "alien",
+        "solved": false
+    },
+    {
+        "id": 56,
+        "clue": "Right, Left! Marches keeping time for strikers?",
+        "answer": "veils",
+        "solved": false
+    },
+    {
+        "id": 57,
+        "clue": "Rejected dwarf Bashful left plushy toy unfinished",
+        "answer": "crepe",
+        "solved": false
+    },
+    {
+        "id": 58,
+        "clue": "Spain's and France's and Italy's earliest hairy humanoid",
+        "answer": "clue",
+        "solved": false
+    },
+    {
+        "id": 59,
+        "clue": "Tailor billed 500 less for offensive suit?",
+        "answer": "pixar",
+        "solved": false
+    },
+    {
+        "id": 60,
+        "clue": "Me? Doing bad, kind of blue",
+        "answer": "ferally",
+        "solved": false
+    },
+    {
+        "id": 61,
+        "clue": "Critic rewound stream featuring female, sheepishly?",
+        "answer": "tree",
+        "solved": false
+    },
+    {
+        "id": 62,
+        "clue": "Brunette's first two AirPods Pro lost in hair, possibly?",
+        "answer": "spot on",
+        "solved": false
+    },
+    {
+        "id": 63,
+        "clue": "Antique rocking chair in empty attic",
+        "answer": "snaked",
+        "solved": false
+    },
+    {
+        "id": 64,
+        "clue": "Crew from vet centre follows possum without hesitation",
+        "answer": "bridge",
+        "solved": false
+    },
+    {
+        "id": 65,
+        "clue": "Townswomen wanting directions turned up for debate",
+        "answer": "rapid",
+        "solved": false
+    },
+    {
+        "id": 66,
+        "clue": "Volatile element or source of vitamin C?",
+        "answer": "twerk",
+        "solved": false
+    },
+    {
+        "id": 67,
+        "clue": "\"Heads, Shoulders, Knees & Toes\" wraps up one little performance",
+        "answer": "youtube",
+        "solved": false
+    },
+    {
+        "id": 68,
+        "clue": "Seizes £1million",
+        "answer": "sling",
+        "solved": false
+    },
+    {
+        "id": 69,
+        "clue": "Close messy garden shed outside",
+        "answer": "atlas",
+        "solved": false
+    },
+    {
+        "id": 70,
+        "clue": "Tender letters shared by pub maid and boyfriend?",
+        "answer": "so what",
+        "solved": false
+    },
+    {
+        "id": 71,
+        "clue": "Uproar from little brother texting you \"LOL\"",
+        "answer": "mascara",
+        "solved": false
+    },
+    {
+        "id": 72,
+        "clue": "So... Paul's loosely related to his wife?",
+        "answer": "widow",
+        "solved": false
+    },
+    {
+        "id": 73,
+        "clue": "Private investigator losing 50 from roulette spin",
+        "answer": "all rise",
+        "solved": false
+    },
+    {
+        "id": 74,
+        "clue": "Curtains need to be restitched after this is detached",
+        "answer": "trounced",
+        "solved": false
+    },
+    {
+        "id": 75,
+        "clue": "Room for kids, yes? Run back to grab second-grader",
+        "answer": "adore",
+        "solved": false
+    },
+    {
+        "id": 76,
+        "clue": "Expect seat diagonal to 5B, say",
+        "answer": "lifeline",
+        "solved": false
+    },
+    {
+        "id": 77,
+        "clue": "Early alien race with many legs",
+        "answer": "murder",
+        "solved": false
+    },
+    {
+        "id": 78,
+        "clue": "Retiring police diver oddly wanting to refrain from farming",
+        "answer": "ancestor",
+        "solved": false
+    },
+    {
+        "id": 79,
+        "clue": "Egad! I am on duty guarding treasure!",
+        "answer": "minute",
+        "solved": false
+    },
+    {
+        "id": 80,
+        "clue": "Summer read \"D\" from \"A-Z\"?",
+        "answer": "organic",
+        "solved": false
+    },
+    {
+        "id": 81,
+        "clue": "Stalked in bed, werewolf returned after we drifted off?",
+        "answer": "create",
+        "solved": false
+    },
+    {
+        "id": 82,
+        "clue": "Seductive, romantic guy dumped after 'mid' sex",
+        "answer": "dice",
+        "solved": false
+    },
+    {
+        "id": 83,
+        "clue": "Swarming bumble bees escape stubborn beast",
+        "answer": "choose",
+        "solved": false
+    },
+    {
+        "id": 84,
+        "clue": "Slim odds of solving that",
+        "answer": "leg",
+        "solved": false
+    },
+    {
+        "id": 85,
+        "clue": "Root canal ache really starts with decay",
+        "answer": "adder",
+        "solved": false
+    },
+    {
+        "id": 86,
+        "clue": "Tap spade over ground",
+        "answer": "intend",
+        "solved": false
+    },
+    {
+        "id": 87,
+        "clue": "Location housing administration's leader!?",
+        "answer": "senegal",
+        "solved": false
+    },
+    {
+        "id": 88,
+        "clue": "Water-deprived pharaoh dies after mixing up directions to Eden",
+        "answer": "arsenic",
+        "solved": false
+    },
+    {
+        "id": 89,
+        "clue": "Shivers after hour spent devouring \"50 Shades of Grey\"",
+        "answer": "sedate",
+        "solved": false
+    },
+    {
+        "id": 90,
+        "clue": "A major possibly participating in march or drill",
+        "answer": "now",
+        "solved": false
+    },
+    {
+        "id": 91,
+        "clue": "Shivers after hour spent devouring \"50 Shades of Grey\"",
+        "answer": "composer",
+        "solved": false
+    },
+    {
+        "id": 92,
+        "clue": "City auditing 80 egg producers",
+        "answer": "athens",
+        "solved": false
+    }
+]

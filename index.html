@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Minute Cryptic Lite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type ="module" src="js/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="outerBox" class="card">
+            <div class="card-body">
+                <div class="clue-container">
+                    <div id="clue"></div>
+                    <div class="length-indicator"></div>
+                </div>
+                <div id="answerRow"></div>
+                <div class="button-container">
+                    <button id="skipButton" class="primary-btn">give up</button>
+                    <button id="checkButton" class="primary-btn">check</button>
+                    <button id="nextButton" class="primary-btn hidden">next</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="successModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="success-icon">
+                <div class="checkmark">
+                    <img src="assets/img/check.png" alt="Check" class="success-img">
+                </div>
+                <div class="successMes">Correct!</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
