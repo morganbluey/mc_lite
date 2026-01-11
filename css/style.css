@@ -132,7 +132,7 @@ body {
 .primary-btn {
     color: var(--border-color);
     font-family: 'Sansita', sans-serif;
-    font-size: clamp(15px, 3vw, 30px);
+    font-size: 25px;
     font-weight: 800;
     font-style: italic;
     width: 150px;

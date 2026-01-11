@@ -5,14 +5,19 @@ async function init() {
     await logic.loadGameData()
     setupEventListeners();
     if (logic.gameData && logic.gameData.length > 0) {
-        renderNextUnsolved(); 
+        displayRiddle(logic.currentDisplayIndex);
     } else {
         console.error("No cryptic clues available, sorry!");
     }
 }
 
-function renderNextUnsolved() {
-    const index = logic.gameData.findIndex(r => !r.solved);
+function renderNextUnsolved(startIndex = 0) {
+    const index = logic.gameData.findIndex((r, i) => i >= startIndex && !r.solved);
+
+    if (index === -1) {
+        index = logic.gameData.findIndex(r => !r.solved);
+    }
+
     if (index !== -1) {
         displayRiddle(index);
     } else {
@@ -25,7 +30,17 @@ function displayRiddle(index) {
     const riddle = logic.gameData[index];
     document.getElementById('clue').innerText = riddle.clue;
     ui.createPhrase(riddle.answer);
-    ui.updateButtonState(false);
+    if (riddle.solved) {
+        ui.updateButtonState(true);
+        const inputs = document.querySelectorAll('.letter-box');
+        inputs.forEach((input, i) => {
+            input.value = riddle.answer.replace(/\s/g, "")[i] || "";
+            input.classList.add('correct');
+            input.disabled = true;
+        });
+    } else {
+        ui.updateButtonState(false);
+    }
 }
 
 function handleCheck() {
@@ -67,7 +82,9 @@ function setupEventListeners() {
         checkBtn.addEventListener('click', handleCheck);
     }
     
-    document.getElementById('nextButton').addEventListener('click', renderNextUnsolved);
+    document.getElementById('nextButton').addEventListener('click', () => {
+        renderNextUnsolved(logic.currentDisplayIndex + 1);
+    });
 
     document.getElementById('skipButton').addEventListener('click', () => {
         let idx = logic.gameData.findIndex((r, i) => i > logic.currentDisplayIndex && !r.solved);

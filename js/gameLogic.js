@@ -8,6 +8,12 @@ export let currentDisplayIndex = 0;
 
 export async function loadGameData() {
     const saved = localStorage.getItem('myRiddleProgress');
+    const savedIndex = localStorage.getItem('lastViewedIndex');
+
+    if (savedIndex) {
+        currentDisplayIndex = parseInt(savedIndex, 10);
+    }
+
     if (saved) {
         gameData = JSON.parse(saved);
         return;
@@ -24,6 +30,7 @@ export async function loadGameData() {
 
 export function updateCurrentIndex(index) {
     currentDisplayIndex = index;
+    localStorage.setItem('lastViewedIndex', index);
 }
 
 export function setSolved() {
