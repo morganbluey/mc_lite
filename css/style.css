@@ -88,6 +88,13 @@ body {
     cursor: pointer;
     caret-color: transparent;
     transition: background-color 0.2s, border-color 0.2s, transform 0.1s;
+    user-select: none;
+    &::selection {
+        background: transparent;
+    }
+    &::-moz-selection {
+        background: transparent;
+    }
 }
 
 .letter-box:first-child {
@@ -102,7 +109,8 @@ body {
 .letter-box:focus {
     background-color: var(--input-focus);
     border-color: var(--border-color);
-    transform: scale(1.02);
+    border-radius: 8px;
+    transform: scale(1.04);
 }
 
 .letter-box.correct {
@@ -110,6 +118,14 @@ body {
     border-color: var(--border-color);
     transform: scale(1);
     cursor: default;
+}
+
+.letter-box:disabled {
+    background-color: var(--input-focus);
+    color: var(--border-color);
+    opacity: 1;
+    cursor: default;
+    -webkit-text-fill-color: var(--border-color);
 }
 
 #clue,

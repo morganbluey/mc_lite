@@ -59,8 +59,14 @@ function handleCheck() {
         ui.updateButtonState(true);
 
         const inputs = document.querySelectorAll('.letter-box');
+
+        if (document.activeElement) {
+            document.activeElement.blur();
+        }
+
         inputs.forEach(input => {
             input.classList.add('correct');
+            input.disabled = true;
         });
     } else {
         ui.applyShake();

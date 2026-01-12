@@ -23,22 +23,30 @@ export function createPhrase(phrase) {
             input.autocomplete = 'off';
 
             input.addEventListener('input', (e) => {
-                if (e.target.value.length === 1) {
-                    let next = input.nextElementSibling;
-                    if (!next && wordDiv.nextElementSibling) {
-                        next = wordDiv.nextElementSibling.querySelector('.letter-box');
+                if (input.value.length > 1) {
+                    input.value = input.value.slice(-1);
+                }
+
+                if (input.value !== "") {
+                    const next = input.nextElementSibling;
+                    if (next && next.classList.contains('letter-box')) {
+                        next.focus();
                     }
-                    if (next) next.focus();
                 }
             });
 
             input.addEventListener('keydown', (e) => {
-                if (e.key === 'Backspace' && e.target.value === '') {
-                    let prev = input.previousElementSibling;
-                    if (!prev && wordDiv.previousElementSibling) {
-                        prev = wordDiv.previousElementSibling.querySelector('.letter-box:last-child');
+                if (e.key === 'Backspace') {
+                    if (input.value !== "") {
+                        input.value = "";
+                    } else {
+                        const prev = input.previousElementSibling;
+                        if (prev && prev.classList.contains('letter-box')) {
+                            prev.focus();
+                            prev.value = "";
+                        }
                     }
-                    if (prev) prev.focus();
+                    e.preventDefault();
                 }
             });
 
@@ -56,7 +64,7 @@ export function showSuccessEffect() {
     const modal = document.getElementById('successModal');
     const modalContent = modal.querySelector('.modal-content');
     modal.classList.add('modal-show');
-    
+
     setTimeout(() => {
         modalContent.classList.add('modal-exit');
         setTimeout(() => {
