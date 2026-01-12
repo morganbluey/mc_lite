@@ -41,11 +41,12 @@ function displayRiddle(index) {
     } else {
         ui.updateButtonState(false);
     }
+    document.getElementById('checkButton').disabled = false;
 }
 
-function handleCheck() {
+export function handleCheck() {
     const riddle = logic.gameData[logic.currentDisplayIndex];
-    if (!riddle) return;
+    if (!riddle || riddle.solved) return;
 
     const inputs = document.querySelectorAll('.letter-box');
     let guess = "";
@@ -56,6 +57,10 @@ function handleCheck() {
     if (guess.toLowerCase() === cleanAnswer) {
         logic.setSolved();
         ui.showSuccessEffect();
+
+        const checkBtn = document.getElementById('checkButton');
+        checkBtn.disabled = true;
+
         ui.updateButtonState(true);
 
         const inputs = document.querySelectorAll('.letter-box');
@@ -87,7 +92,7 @@ function setupEventListeners() {
     if (checkBtn) {
         checkBtn.addEventListener('click', handleCheck);
     }
-    
+
     document.getElementById('nextButton').addEventListener('click', () => {
         renderNextUnsolved(logic.currentDisplayIndex + 1);
     });
@@ -100,12 +105,21 @@ function setupEventListeners() {
 
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
-            if (document.activeElement !== document.getElementById('clue')) {
-                e.preventDefault();
-                handleCheck();
-            } else {
-                clueElement.blur();
+            const nextBtn = document.getElementById('nextButton');
+            const modal = document.getElementById('successModal');
+
+            if (modal && modal.classList.contains('modal-show')) {
+                modal.classList.remove('modal-show');
+                nextBtn.click();
+                return;
             }
+
+            if (nextBtn && !nextBtn.classList.contains('hidden')) {
+                nextBtn.click();
+            } else {
+                handleCheck();
+            }
+            e.preventDefault();
         }
     });
 }

@@ -19,45 +19,65 @@ export function createPhrase(phrase) {
             input.type = 'text';
             input.className = 'letter-box';
             input.maxLength = 1;
-            input.name = `letter-${wordIndex}-${letterIndex}`;
             input.autocomplete = 'off';
-
-            input.addEventListener('input', (e) => {
-                if (input.value.length > 1) {
-                    input.value = input.value.slice(-1);
-                }
-
-                if (input.value !== "") {
-                    const next = input.nextElementSibling;
-                    if (next && next.classList.contains('letter-box')) {
-                        next.focus();
-                    }
-                }
-            });
-
-            input.addEventListener('keydown', (e) => {
-                if (e.key === 'Backspace') {
-                    if (input.value !== "") {
-                        input.value = "";
-                    } else {
-                        const prev = input.previousElementSibling;
-                        if (prev && prev.classList.contains('letter-box')) {
-                            prev.focus();
-                            prev.value = "";
-                        }
-                    }
-                    e.preventDefault();
-                }
-            });
-
-            input.addEventListener('focus', () => input.select());
             wordDiv.appendChild(input);
         });
         container.appendChild(wordDiv);
     });
 
-    const firstInput = container.querySelector('.letter-box');
-    if (firstInput) firstInput.focus();
+    const allInputs = Array.from(container.querySelectorAll('.letter-box'));
+
+    allInputs.forEach((input, currentIndex) => {
+        input.addEventListener('focus', () => {
+            input.select();
+        });
+
+        input.addEventListener('input', () => {
+            if (input.value.length > 1) {
+                input.value = input.value.slice(-1);
+            }
+
+            if (input.value !== "") {
+                if (currentIndex < allInputs.length - 1) {
+                    allInputs[currentIndex + 1].focus();
+                }
+            }
+        });
+
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') {
+                if (currentIndex < allInputs.length - 1) {
+                    allInputs[currentIndex + 1].focus();
+                }
+                e.preventDefault();
+            }
+            else if (e.key === 'ArrowLeft') {
+                if (currentIndex > 0) {
+                    allInputs[currentIndex - 1].focus();
+                }
+                e.preventDefault();
+            }
+
+            else if (e.key === 'Backspace') {
+                if (input.value !== "") {
+                    input.value = "";
+                } else if (currentIndex > 0) {
+                    const prevInput = allInputs[currentIndex - 1];
+                    prevInput.focus();
+                    prevInput.value = "";
+                }
+                e.preventDefault();
+            }
+
+            else if (e.key.length === 1 && !e.ctrlKey && !e.metaKey) {
+                if (input.value !== "") {
+                    input.value = "";
+                }
+            }
+        });
+    });
+
+    if (allInputs.length > 0) allInputs[0].focus();
 }
 
 export function showSuccessEffect() {
